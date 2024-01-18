@@ -58,23 +58,27 @@ li a {
     font-size: smaller;
     text-decoration: none;
     color: aliceblue;
-    transition: all 2s, color 1s;
+    transition: all 2s, color 1s padding .5s, top .35s, box-shadow .4s;
 }
 
 li a:hover {
     text-decoration: underline;
     color: #e893cf;
+    top: -0.16em;
+    transition: padding .5s, top .35s, box-shadow .4s;
+    box-shadow: 0 0.4rem 0 -0.1rem white;
 }
 
 .btn {
     background: #e893cf;
     border: none;
-    padding: 6px 19px;
+    padding: 7px 19px;
     border-radius: 3px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     transform: scaleX(1) scaleY(1);
-     transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .btn:hover {
@@ -84,4 +88,7 @@ li a:hover {
     transform: scaleX(1.1) scaleY(1);
 
 
+}
+.fa-arrow-right-from-bracket{
+    color: #9376e0;
 }
